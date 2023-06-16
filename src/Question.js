@@ -1,16 +1,18 @@
 import React from 'react';
-
-function Question({ question, options, onSelectAnswer }) {
+import "./Question.css"
+function Question({question, options, onSelectAnswer, onBack }) {
   return (
-    <div>
-      <h2>{question}</h2>
-      <div>
+    <div className='Question'>
+      <h2 className='preguntas'>{question}</h2>
+      <div >
         {options.map((option) => (
-        <button key={option} onClick={() => onSelectAnswer(option)}>  {option}</button>  
-          
+       <div className='respuestas'> <button id='respuesta'key={option} onClick={() => onSelectAnswer(option)}>  {option}</button>  
+          </div>
          
         ))}
+        
       </div>
+      <button id='volver' onClick={onBack}>Volver a seleccionar tema</button>
     </div>
   );
 }

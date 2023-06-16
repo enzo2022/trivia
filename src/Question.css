@@ -1,0 +1,43 @@
+.Question{
+  background-image: url("https://w7.pngwing.com/pngs/563/67/png-transparent-trivia-logo-game-sporcle-quiz-others-game-logo-signage.png") ;
+height: 100vh;
+background-size: cover;
+}
+
+.preguntas{
+  text-align:center;
+text-decoration: dotted;
+font-size: xx-large;
+background-color: rgb(149, 133, 152);
+}
+  
+
+.respuestas{
+
+ padding: 2px;
+ /* text-align: center; */
+ display: flex;
+justify-content: center;
+padding: 20px;
+
+}
+
+
+#respuesta{
+  font-size: x-large;
+  background-color: rgb(149, 133, 152);
+
+border-radius: 10% 30% 10% 30%;
+padding: 2%;
+}
+
+
+
+#volver{
+
+  font-size: x-large;
+  background-color: rgb(174, 164, 237);
+
+border-radius: 10% 30% 10% 30%;
+padding: 1%;
+}
